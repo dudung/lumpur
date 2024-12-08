@@ -1,2 +1,2 @@
 # lumpur
-learning to use methods for processing unclear response
+learn to use methods for processing unclear response
