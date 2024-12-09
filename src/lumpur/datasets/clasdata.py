@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 def binary(
   coeffs,
@@ -26,5 +27,11 @@ def binary(
                y.append(labels[1])
             else:
                y.append(labels[0])
-
-    return x1, x2, y
+    
+    df = pd.DataFrame({
+        'x1': x1,
+        'x2': x2,
+        'y': y
+    })
+    
+    return df
