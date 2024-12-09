@@ -1,6 +1,6 @@
 [tool.poetry]  # This section is for Poetry (optional, if using Poetry)
 name = "lumpur"
-version = "0.0.1"
+version = "0.0.2"
 description = "learn to use methods for processing unclear response"
 authors = ["Sparisoma Viridi <dudung@gmail.com>"]
 license = "MIT"

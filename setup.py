@@ -2,11 +2,12 @@ from setuptools import setup, find_packages
 
 setup(
     name='lumpur',
-    version='0.0.1',
+    version='0.0.2',
     packages=find_packages(where='src'),
     package_dir={'': 'src'},
     install_requires=[
-        # Specify minimum version
+        "numpy>=1.26.4",      # Specify minimum version,
+        "matplotlib>=3.8.4",
     ],
     tests_require=[
         'unittest',
