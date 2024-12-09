@@ -8,7 +8,7 @@ setup(
     install_requires=[
         "numpy>=1.26.4",      # Specify minimum version,
         "matplotlib>=3.8.4",
-        "pandas>==2.2.2",
+        "pandas>=2.2.2",
     ],
     tests_require=[
         'unittest',
