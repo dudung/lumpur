@@ -17,4 +17,4 @@ coeffs = [[0], [-1, 1]]
 df = ldc.binary(coeffs)
 ldv.plot_binary(df)
 ```
-![](docs/images/datavis_linear.png)
+![](docs/images/dataviz_linear.png)
