@@ -3,10 +3,10 @@ learn to use methods for processing unclear response
 
 
 ## features
-+ `binary()`function in `lumpur.datasets.clasdata` module.
-+ `plot_binary()` function in `lumpur.datasets.dataviz` module.
-+ `abbr()` function in `lumpur.misc.info` module.
-+ `Vect3` class in `lumpur.vectors` module.
++ `binary()`function in `datasets.clasdata` module.
++ `plot_binary()` function in `datasets.dataviz` module.
++ `abbr()` function in `misc.info` module.
++ `Vect3` class in `vectors` module.
 
 
 ## examples
