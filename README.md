@@ -6,6 +6,7 @@ learn to use methods for processing unclear response
 + `binary()`function in `lumpur.datasets.clasdata` module.
 + `plot_binary()` function in `lumpur.datasets.dataviz` module.
 + `abbr()` function in `lumpur.misc.info` module.
++ `Vect3` class in `lumpur.vectors` module.
 
 
 ## examples
@@ -15,7 +16,6 @@ Following are some examples of lumpur.
 $$
 0.41 - 0.8x - 1.2y + x^2 + y^2 = 0
 $$
-
 ```py
 import lumpur.datasets.clasdata as ldc
 import lumpur.datasets.dataviz as ldv
@@ -48,6 +48,57 @@ import lumpur.misc.info as info
 
 print(info.abbrv())
 ```
+
 ```
 learn to use methods for processing unclear response
+```
+
+## vectors addition
+$$
+\begin{array}{rcl}
+c_x & = & a_x + b_x, \newline
+c_y & = & a_y + b_y, \newline
+c_z & = & a_z + b_z.
+\end{array}
+$$
+```py
+from lumpur.vectors.vect3 import Vect3
+
+a = Vect3(1, 2, 3)
+b = Vect3(1, 1, 1)
+c = a + b
+
+print('    a =', a)
+print('    b =', b)
+print('a + b =', c)
+```
+```
+    a = { "x": 1, "y": 2, "z": 3 }
+    b = { "x": 1, "y": 1, "z": 1 }
+a + b = { "x": 2, "y": 3, "z": 4 }
+```
+
+## vectors cross product
+$$
+\begin{array}{rcl}
+c_x & = & a_y \ b_z - a_z \ b_y, \newline
+c_y & = & a_z \ b_x - a_x \ b_z, \newline
+c_z & = & a_x \ b_y - a_y \ b_x.
+\end{array}
+$$
+```py
+from lumpur.vectors.vect3 import Vect3
+
+a = Vect3(1, 7, 3)
+b = Vect3(3, 2, 4)
+d = a * b
+
+print('    a =', a)
+print('    b =', b)
+print('a x b =', d)
+```
+```
+    a = { "x": 1, "y": 7, "z": 3 }
+    b = { "x": 3, "y": 2, "z": 4 }
+a x b = { "x": 22, "y": 5, "z": -19 }
 ```
