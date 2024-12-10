@@ -76,7 +76,7 @@ r2 = [0, 1.05, 0.05]
 df = ldc.binary(coeffs, r1=r1, r2=r2)
 ldv.plot_binary(df)
 ```
-<img src="docs/images/dataviz_circular.png" width="300" />
+<img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/dataviz_circular.png" width="300" />
 
 ### linier decision boundary
 $$
@@ -90,7 +90,7 @@ coeffs = [[0], [-1, 1]]
 df = ldc.binary(coeffs)
 ldv.plot_binary(df)
 ```
-<img src="docs/images/dataviz_linear.png" width="300" />
+<img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/dataviz_linear.png" width="300" />
 
 ### abbreviation
 ```py
