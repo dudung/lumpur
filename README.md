@@ -18,3 +18,12 @@ df = ldc.binary(coeffs)
 ldv.plot_binary(df)
 ```
 <img src="docs/images/dataviz_linear.png" width="300" />
+
+```py
+import lumpur.misc.info as info
+
+print(info.abbrv())
+```
+```
+learn to use methods for processing unclear response
+```
