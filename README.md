@@ -42,7 +42,7 @@ ldv.plot_binary(df)
 ```
 <img src="docs/images/dataviz_linear.png" width="300" />
 
-### lumpur abbreviation
+### abbreviation
 ```py
 import lumpur.misc.info as info
 
