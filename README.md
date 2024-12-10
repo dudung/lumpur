@@ -12,7 +12,7 @@ learn to use methods for processing unclear response
 ## examples
 Following are some examples of lumpur.
 
-## vectors addition
+### vectors addition
 $$
 \begin{array}{rcl}
 c_x & = & a_x + b_x, \newline
@@ -37,7 +37,7 @@ print('a + b =', c)
 a + b = { "x": 2, "y": 3, "z": 4 }
 ```
 
-## vectors cross product
+### vectors cross product
 $$
 \begin{array}{rcl}
 c_x & = & a_y \ b_z - a_z \ b_y, \newline
