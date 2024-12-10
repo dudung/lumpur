@@ -15,11 +15,9 @@ learn to use methods for processing unclear response
 ## illustrations
 Some motions for single particle.
 
-<img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/transient_drag_euler.png" width="300" /> 
-<img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/parabolic_gravitational_euler.png" width="300" />
+<img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/transient_drag_euler.png" width="300" /><img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/parabolic_gravitational_euler.png" width="300" />
 
-<img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/harmonic_spring_euler.png" width="300" />
-<img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/circular_magnetic_euler.png" width="300" />
+<img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/harmonic_spring_euler.png" width="300" /><img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/circular_magnetic_euler.png" width="300" />
 
 The motions are for particle moving in flowing viscous medium and performing some motions (parabolic, harmonic, circular).
 
