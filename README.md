@@ -3,6 +3,9 @@ learn to use methods for processing unclear response
 
 
 ## features
++ `Drag`, `Electric`, `Gravitational`, `Magnetic`, `Normal`, `Spring` classes in `forces` module.
++ `Rectangle`, `Triangle` classes in `shapes` module.
++ `Color2` class in `utils` module.
 + `Vect3` class in `vectors` module.
 + `binary()`function in `datasets.clasdata` module.
 + `plot_binary()` function in `datasets.dataviz` module.
