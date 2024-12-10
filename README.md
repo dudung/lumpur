@@ -9,6 +9,9 @@ learn to use methods for processing unclear response
 
 
 ## examples
+$$
+-x + y = 0
+$$
 ```py
 import lumpur.datasets.clasdata as ldc
 import lumpur.datasets.dataviz as ldv
