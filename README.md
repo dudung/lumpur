@@ -91,7 +91,7 @@ ldv.plot_binary(df)
 ```
 <img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/dataviz_circular.png" width="300" />
 
-### linier decision boundary
+### linear decision boundary
 $$
 -x + y = 0
 $$
