@@ -12,6 +12,18 @@ learn to use methods for processing unclear response
 + `abbr()` function in `misc.info` module.
 
 
+## illustrations
+Some motions for single particle.
+
+<img src="docs/images/transient_drag_euler.png" width="300" /> 
+<img src="docs/images/parabolic_gravitational_euler.png" width="300" />
+
+<img src="docs/images/harmonic_spring_euler.png" width="300" />
+<img src="docs/images/circular_magnetic_euler.png" width="300" />
+
+The motions are for particle moving in flowing viscous medium and performing some motions (parabolic, harmonic, circular).
+
+
 ## examples
 Following are some examples of lumpur.
 
