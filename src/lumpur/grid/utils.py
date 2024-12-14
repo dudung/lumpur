@@ -25,7 +25,7 @@ def create_grid(rows, cols, val=0):
     return m
 
 
-def str_grid(grid, char_map=None):
+def str_grid(grid, char_map=None, hsep=''):
     """
     Generate string representation of the grid.
     
@@ -38,6 +38,10 @@ def str_grid(grid, char_map=None):
         A dictionary mapping numerical values to characters
         Defaults map 0-9 to '0'-'9', 10-35 to 'A'-'Z', others
         to '#'.
+    
+    hsep : str
+        Hofizontal separation string between two characters.
+        Defaults to '' (empty string).
     
     Returns:
     --------
@@ -64,7 +68,7 @@ def str_grid(grid, char_map=None):
             c = char_map.get(value, default_mapping(value))
             line.append(c)
             
-        lines.append(''.join(line))
+        lines.append(hsep.join(line))
     
     result = '\n'.join(lines)
     return result

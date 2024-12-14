@@ -25,10 +25,10 @@ def add_wall(grid, start, end, wall=-1, orient='horiz'):
     """
     if orient == "horiz":
         for col in range(start[1], end[1] + 1):
-            grid[start[0]][col] = 0
+            grid[start[0]][col] = wall
     elif orient == "vert":
         for row in range(start[0], end[0] + 1):
-            grid[row][start[1]] = 0
+            grid[row][start[1]] = wall
 
 
 def add_surrounding_walls(grid, wall=-1):
