@@ -1,11 +1,20 @@
 def create_grid(rows, cols, val=0):
     """
-    Create grid
+    Create grid with certain value val.
     
     Args:
-        rows: Number of rows.
-        cols: Number of columns.
-        val: Value for all cells.
+    -----
+    rows : int
+        Number of rows.
+    cols : int
+        Number of columns.
+    val : int, optional.
+        Value for all cells. Defaults to 0.
+    
+    Returns:
+    --------
+    m : list of list of int
+        A 2D list containing numerical values.
     """
     m = []
     for r in range(rows):
@@ -18,20 +27,24 @@ def create_grid(rows, cols, val=0):
 
 def str_grid(grid, char_map=None):
     """
-    Generate string representation of the grid customized with char_map.
+    Generate string representation of the grid.
     
     Args:
     -----
     grid : list of list of int
-        A 2D list (grid) containing numerical values.
+        A 2D list containing numerical values.
     
     char_map : dict, optional
-        A dictionary mapping numerical values to their characters representation. If not provided, a default mapping will be used for values 0-9 (mapped to '0'-'9'), 10-35 (mapped to 'A'-'Z'), and others mapped to '#'.
+        A dictionary mapping numerical values to characters
+        Defaults map 0-9 to '0'-'9', 10-35 to 'A'-'Z', others
+        to '#'.
     
     Returns:
     --------
-    str
-        A single string representing the grid with rows separated by newlines. Each cell is represented by a single character according to the `char_map` mapping.
+    result : str
+        A single string representing the grid with rows
+        separated by newlines. Each cell is represented by
+        a single character according to the `char_map` mapping.
     """
     if char_map is None:
         char_map = {}
