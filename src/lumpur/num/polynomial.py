@@ -144,3 +144,22 @@ class Polynomial:
                 new_coefs[i + j] += a * b
         new_poly = Polynomial(new_coefs)
         return new_poly
+    
+    def evaluate(self, x : list[float]):
+        """
+        Evaluate the polynomial for some values of x.
+        
+        Args:
+        -----
+        x : list[float]
+            Values of x to be evaluated with the polynomial.
+        
+        Returns:
+        y : list[float]
+            Values obtained from the polynomial.
+        """
+        y = []
+        for xi in x:
+            yi = self(xi)
+            y.append(yi)
+        return y
