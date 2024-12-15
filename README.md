@@ -2,77 +2,52 @@
 learn to use methods for processing unclear response
 
 
+## contribute
++ Learn the instructions on [first-contributions](https://github.com/firstcontributions/first-contributions).
++ Apply to this repository what you learn there.
+
+
 ## features
-+ `Drag`, `Electric`, `Gravitational`, `Magnetic`, `Normal`, `Spring` classes in `forces` module.
-+ `Rectangle`, `Triangle` classes in `shapes` module.
-+ `Color2` class in `utils` module.
-+ `Vect3` class in `vectors` module.
-+ `binary()`function in `datasets.clasdata` module.
-+ `plot_binary()` function in `datasets.dataviz` module.
-+ `abbr()` function in `misc.info` module.
-
-
-## illustrations
-Some motions for single particle.
-
-<img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/transient_drag_euler.png" width="300" /><img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/parabolic_gravitational_euler.png" width="300" />
-
-<img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/harmonic_spring_euler.png" width="300" /><img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/circular_magnetic_euler.png" width="300" />
-
-The motions are for particle moving in flowing viscous medium and performing some motions (parabolic, harmonic, circular).
++ `Polynomial` class in `num.polynomial` module.
++ `plot_binary()` function in `dat.dataviz` module.
++ `binary()`function in `dat.clasdata` module.
++ `abbr()` function in `use.misc.info` module.
 
 
 ## examples
 Following are some examples of lumpur.
 
-### vectors addition
-$$
-\begin{array}{rcl}
-c_x & = & a_x + b_x, \newline
-c_y & = & a_y + b_y, \newline
-c_z & = & a_z + b_z.
-\end{array}
-$$
+### polynomial
 ```py
-from lumpur.vectors.vect3 import Vect3
+from lumpur.num.polynomial import Polynomial
 
-a = Vect3(1, 2, 3)
-b = Vect3(1, 1, 1)
-c = a + b
-
-print('    a =', a)
-print('    b =', b)
-print('a + b =', c)
+p1 = Polynomial([1, 2, 3])
+print('y1 =', p1)
+p2 = Polynomial([0, -2, 5, 6, 9])
+print('y2 =', p2)
+p3 = p1 + p2
+print('y3 =', p3)
 ```
 ```
-    a = { "x": 1, "y": 2, "z": 3 }
-    b = { "x": 1, "y": 1, "z": 1 }
-a + b = { "x": 2, "y": 3, "z": 4 }
+y1 = 1 + 2x + 3x^2
+y2 = -2x + 5x^2 + 6x^3 + 9x^4
+y3 = 1 + 8x^2 + 6x^3 + 9x^4
 ```
 
-### vectors cross product
-$$
-\begin{array}{rcl}
-c_x & = & a_y \ b_z - a_z \ b_y, \newline
-c_y & = & a_z \ b_x - a_x \ b_z, \newline
-c_z & = & a_x \ b_y - a_y \ b_x.
-\end{array}
-$$
 ```py
-from lumpur.vectors.vect3 import Vect3
+from lumpur.num.polynomial import Polynomial
 
-a = Vect3(1, 7, 3)
-b = Vect3(3, 2, 4)
-d = a * b
-
-print('    a =', a)
-print('    b =', b)
-print('a x b =', d)
+p1 = Polynomial([1, -2, 3])
+print('y1 =', p1)
+p2 = Polynomial([-2, 1])
+print('y2 =', p2)
+p3 = p1 * p2
+print('y3 =', p3)
 ```
 ```
-    a = { "x": 1, "y": 7, "z": 3 }
-    b = { "x": 3, "y": 2, "z": 4 }
-a x b = { "x": 22, "y": 5, "z": -19 }
+y1 = 1 - 2x + 3x^2
+y2 = -2 + x^1
+y3 = -2 + 5x - 8x^2 + 3x^3
 ```
 
 ### circular decision boundary
@@ -80,8 +55,8 @@ $$
 0.41 - 0.8x - 1.2y + x^2 + y^2 = 0
 $$
 ```py
-import lumpur.datasets.clasdata as ldc
-import lumpur.datasets.dataviz as ldv
+import lumpur.dat.clasdata as ldc
+import lumpur.dat.dataviz as ldv
 
 coeffs = [[0.41], [-0.8, -1.2], [1, 0, 1]]
 r1 = [0, 1.05, 0.05]
@@ -96,8 +71,8 @@ $$
 -x + y = 0
 $$
 ```py
-import lumpur.datasets.clasdata as ldc
-import lumpur.datasets.dataviz as ldv
+import lumpur.dat.clasdata as ldc
+import lumpur.dat.dataviz as ldv
 
 coeffs = [[0], [-1, 1]]
 df = ldc.binary(coeffs)
@@ -107,7 +82,7 @@ ldv.plot_binary(df)
 
 ### abbreviation
 ```py
-import lumpur.misc.info as info
+import lumpur.use.misc.info as info
 
 print(info.abbrv())
 ```
