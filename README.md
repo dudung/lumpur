@@ -81,13 +81,13 @@ $$
 $$
 ```py
 import lumpur.dat.clasdata as ldc
-import lumpur.dat.dataviz as ldv
+from lumpur.viz.plot.binary import plot_binary
 
 coeffs = [[0.41], [-0.8, -1.2], [1, 0, 1]]
 r1 = [0, 1.05, 0.05]
 r2 = [0, 1.05, 0.05]
 df = ldc.binary(coeffs, r1=r1, r2=r2)
-ldv.plot_binary(df)
+plot_binary(df)
 ```
 <img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/dataviz_circular.png" width="300" />
 
@@ -97,11 +97,11 @@ $$
 $$
 ```py
 import lumpur.dat.clasdata as ldc
-import lumpur.dat.dataviz as ldv
+from lumpur.viz.plot.binary import plot_binary
 
 coeffs = [[0], [-1, 1]]
 df = ldc.binary(coeffs)
-ldv.plot_binary(df)
+plot_binary(df)
 ```
 <img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/dataviz_linear.png" width="300" />
 
