@@ -8,8 +8,9 @@ learn to use methods for processing unclear response
 
 
 ## features
++ `plot_binary()` function in `viz.plot.binary` module.
++ `plot_polynomial()` function in `viz.plot.polynomial` module.
 + `Polynomial` class in `num.polynomial` module.
-+ `plot_binary()` function in `dat.dataviz` module.
 + `binary()`function in `dat.clasdata` module.
 + `abbr()` function in `use.misc.info` module.
 
