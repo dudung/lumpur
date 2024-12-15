@@ -71,3 +71,28 @@ class Linear:
             - b: List of first coefficients (slopes).
         """
         return self.a, self.b
+    
+    def interpolate(self, x : list[float]):
+        """
+        Generate interpolated output from given input values.
+        
+        Args:
+        -----
+        x : list[float]
+            Values of x.
+        
+        Returns:
+        --------
+        y : list[float]
+            Values of predicted y.
+        """
+        y = []
+        for i, xi in enumerate(x):
+            for j in range(len(self.a)):
+                if self.xx[j] <= xi < self.xx[j+1]:
+                    yi = self.a[j] + self.b[j] * xi
+                    y.append(yi)
+                elif xi == self.xx[j+1] and i == len(x) - 1:
+                    yi = self.a[j] + self.b[j] * xi
+                    y.append(yi)
+        return y
