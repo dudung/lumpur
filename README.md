@@ -37,22 +37,6 @@ y3 = 1 + 8x^2 + 6x^3 + 9x^4
 
 ```py
 from lumpur.num.polynomial import Polynomial
-
-p1 = Polynomial([1, -2, 3])
-print('y1 =', p1)
-p2 = Polynomial([-2, 1])
-print('y2 =', p2)
-p3 = p1 * p2
-print('y3 =', p3)
-```
-```
-y1 = 1 - 2x + 3x^2
-y2 = -2 + x^1
-y3 = -2 + 5x - 8x^2 + 3x^3
-```
-
-```py
-from lumpur.num.polynomial import Polynomial
 from lumpur.viz.plot.polynomial import plot_polynomial
 
 p1 = Polynomial([-1, 1])
