@@ -73,7 +73,7 @@ plot_polynomial(x, d2p, label='d2p/dx2')
 plot_polynomial(x, d3p, label='d3p/dx3')
 plot_polynomial(x, d4p, label='d4p/dx4')
 ```
-<img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/polynomial.png" width="400" />
+<img src="https://raw.githubusercontent.com/dudung/lumpur/refs/heads/main/docs/images/polynomial.png" width="500" />
 
 
 ### circular decision boundary
